@@ -4,7 +4,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
 
 
-  publicDir: path.resolve(__dirname, 'Public'),
+  publicDir: path.resolve(__dirname, 'public'),
   
   envDir: '../',
   server: {
