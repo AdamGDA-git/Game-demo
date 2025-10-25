@@ -2,8 +2,7 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-
-  
+  base: '/Game-demo/', // 👈 replace with your actual repo name
   envDir: '../',
   server: {
     proxy: {
@@ -23,8 +22,8 @@ export default defineConfig({
       external: [
         '/index.js',
         '/index.wasm',
-        '/index.pck',   // change name if your .pck is different
-        '/index.wasm.framework.unityweb', // if Godot/Unity exports more, add here
+        '/index.pck',
+        '/index.wasm.framework.unityweb',
       ],
     },
   },
